@@ -1046,7 +1046,7 @@ void parallel_crc_calculate(int * crc, int input_bits[], int input_bits_length, 
  
   int top_value;
 
-  int crc_table[265][24];
+  int crc_table[256][24];
 
   switch(crc_type)
   {
