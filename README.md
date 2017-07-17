@@ -2,7 +2,7 @@
 
 A C implementation of the LTE CRC calculation which can be compiled to mex file under matlab.
 
-The CRC algorithm is according to ['A Painless Guide to CRC Error Detection Algorithms'](http://www.repairfaq.org/filipg/LINK/F_crc_v3.html).
+The CRC algorithm is according to [A Painless Guide to CRC Error Detection Algorithms](http://www.repairfaq.org/filipg/LINK/F_crc_v3.html).
 
 ## Features
 * LTE CRC 24A
