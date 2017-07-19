@@ -17,9 +17,9 @@ for crc_type = 0:3
     
     switch crc_type
         case 0
-            crc_type_prime = 8;
+            crc_type_prime = '8';
         case 1
-            crc_type_prime = 16;
+            crc_type_prime = '16';
         case 2
             crc_type_prime = '24A';
         case 3
@@ -30,7 +30,7 @@ for crc_type = 0:3
         
         input_bits = randi([0, 1], 1, input_bits_length);
         
-        crc = parallel_crc_calculate(input_bits, input_bits_length, crc_type);
+        crc = parallel_crc_calculate(input_bits, crc_type_prime);
         
         crc_prime = lte_calc_crc(input_bits, crc_type_prime);
         

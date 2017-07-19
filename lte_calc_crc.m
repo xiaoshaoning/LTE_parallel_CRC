@@ -27,16 +27,16 @@
 %              James Peroulas 07/13/2012 Modified for use in Matlab.
 function [crc_bits] = lte_calc_crc(in_bits, crc_type)
     % Check crc_type
-    if(crc_type == 8)
+    if strcmpi(crc_type,'8')
         crc_poly = [1,1,0,0,1,1,0,1,1];
         crc_len  = 8;
-    elseif(crc_type == 16)
+    elseif strcmpi(crc_type,'16')
         crc_poly = [1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1];
         crc_len  = 16;
-    elseif(crc_type == '24A')
+    elseif strcmpi(crc_type,'24A')
         crc_poly = [1,1,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1];
         crc_len  = 24;
-    elseif(crc_type == '24B')
+    elseif strcmpi(crc_type, '24B')
         crc_poly = [1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1];
         crc_len  = 24;
     else
